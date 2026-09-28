@@ -66,12 +66,17 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=PiwPiyolett&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=F0C060&icon_color=46C7D0&text_color=F5E6C8&bg_color=160E07" alt="stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PiwPiyolett&layout=compact&hide_border=true&langs_count=8&title_color=F0C060&text_color=F5E6C8&bg_color=160E07" alt="top langs"/>
+<img width="82%" src="./profile-summary-card-output/maroongold/0-profile-details.svg" alt="ringkasan profil"/>
+
+<img width="49%" src="./profile-summary-card-output/maroongold/3-stats.svg" alt="statistik"/>
+<img width="49%" src="./profile-summary-card-output/maroongold/1-repos-per-language.svg" alt="bahasa per repositori"/>
+
+<img width="49%" src="./profile-summary-card-output/maroongold/2-most-commit-language.svg" alt="bahasa commit terbanyak"/>
+<img width="49%" src="./profile-summary-card-output/maroongold/4-productive-time.svg" alt="waktu produktif"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=PiwPiyolett&hide_border=true&background=160E07&stroke=46C7D0&ring=F0C060&fire=46C7D0&currStreakLabel=F0C060&sideLabels=F5E6C8&currStreakNum=F5E6C8&sideNums=F5E6C8&dates=8A6D4A&titleColor=F0C060" alt="streak"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=PiwPiyolett&hide_border=true&background=2A0A0A&stroke=F0C060&ring=F0C060&fire=46C7D0&currStreakLabel=F0C060&sideLabels=F5E6C8&currStreakNum=F5E6C8&sideNums=F5E6C8&dates=B08968&titleColor=F0C060" alt="streak"/>
 
 </div>
 
