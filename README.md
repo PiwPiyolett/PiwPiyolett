@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" alt="Ariqo Banyusila Abrar — AI Engineer · App Builder" width="100%"/>
+<img src="./assets/header.svg" alt="Ariqo Banyusila Abrar · AI Engineer · App Builder" width="100%"/>
 
 <br/>
 
@@ -13,12 +13,12 @@
 
 ---
 
-### 👋 Tentang Saya
+### 👋 About Me
 
-- 🤖 **AI Engineer & App Builder** — membangun aplikasi cerdas dari ide hingga jadi.
-- 🛠️ Suka membangun hal nyata: aplikasi **mobile, desktop, dan web** — dari asisten AI bersuara sampai alat sehari-hari.
-- 🧠 Fokus mengintegrasikan **LLM** (Claude, Gemini) ke dalam produk nyata.
-- 🌱 Prinsip: *always learning, always shipping.*
+- 🤖 **AI Engineer & App Builder** yang membangun aplikasi cerdas dari ide hingga jadi.
+- 🛠️ Suka membangun hal nyata: aplikasi **mobile, desktop, dan web** untuk kebutuhan sehari-hari.
+- 🧠 Antusias mengeksplorasi **LLM & AI generatif** (Claude, Gemini) dan menerapkannya ke masalah nyata.
+- 📚 Terus belajar seputar AI dan senang bereksperimen membangun sesuatu yang baru.
 
 ---
 
@@ -45,20 +45,6 @@
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-
----
-
-### 🚀 Proyek Unggulan
-
-| Proyek | Stack | Deskripsi |
-|--------|-------|-----------|
-| 🧊 **[3D-Model-AI-Assistant](https://github.com/PiwPiyolett/3D-Model-AI-Assistant)** | Live2D · Node · Claude | Asisten AI bersuara dengan avatar Live2D — mendengar, menjawab, & berekspresi |
-| 📝 **[AutoNotes](https://github.com/PiwPiyolett/AutoNotes)** | Tauri · Rust · React | Pencatat desktop anti-typo, koreksi < 1 ms, 100% offline |
-| 🛡️ **[SIGAP-Siswa](https://github.com/PiwPiyolett/SIGAP-Siswa)** | Expo · React Native | Deteksi kecelakaan otomatis + SOS WhatsApp untuk pengemudi |
-| 👨‍👩‍👧 **[SIGAP-Family](https://github.com/PiwPiyolett/SIGAP-Family)** | Expo · React Native | Pendamping keluarga untuk memantau pengemudi |
-| 🏫 **[SIGAP-Sekolah](https://github.com/PiwPiyolett/SIGAP-Sekolah)** | Expo · React Native | Panel pemantauan keselamatan siswa untuk sekolah |
-| 📈 **[Jurnal-Trading-For-Scalper](https://github.com/PiwPiyolett/Jurnal-Trading-For-Scalper)** | JS · Supabase · Vercel | Jurnal trading multi-user untuk scalper — [live](https://jurnal-scalper.vercel.app) |
-| 🎬 **[VidownAB](https://github.com/PiwPiyolett/VidownAB)** | Python · yt-dlp | Downloader video YouTube & TikTok, sekali paste link |
 
 ---
 
@@ -94,6 +80,6 @@
 
 <div align="center">
 
-*✨ Terima kasih sudah mampir — semoga harimu menyenangkan! ✨*
+**Thank You**
 
 </div>
