@@ -1,123 +1,306 @@
-<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ariqo Banyusila Abrar - AI Engineer and App Builder">
+<svg viewBox="0 0 1000 300" width="1000" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title">
+  <title id="title">Ariqo Banyusila Abrar · AI Engineer · App Builder</title>
   <defs>
+    <!-- ===== palette & light ===== -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#170e07"/>
-      <stop offset="0.5" stop-color="#241606"/>
+      <stop offset="0" stop-color="#1b1108"/>
+      <stop offset="0.55" stop-color="#241607"/>
       <stop offset="1" stop-color="#0d0904"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
-      <stop offset="0" stop-color="#6b4416" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#402910" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#402910" stop-opacity="0"/>
+    <radialGradient id="aura" cx="500" cy="150" r="420" gradientUnits="userSpaceOnUse" gradientTransform="translate(500 150) scale(1 0.55) translate(-500 -150)">
+      <stop offset="0" stop-color="#8a5a1c" stop-opacity="0.75"/>
+      <stop offset="0.4" stop-color="#5a3812" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2a1a0a" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="120" y1="-80" x2="560" y2="340">
+      <stop offset="0" stop-color="#FFD98A" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#FFD98A" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFD98A" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bokehGold">
+      <stop offset="0" stop-color="#F3C766" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#E3A33F" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#E3A33F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokehTeal">
+      <stop offset="0" stop-color="#6ADBE2" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6ADBE2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mote">
+      <stop offset="0" stop-color="#FFF4D2"/>
+      <stop offset="0.35" stop-color="#F7CC6A" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#F0B84A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moteTeal">
+      <stop offset="0" stop-color="#E6FEFF"/>
+      <stop offset="0.35" stop-color="#7FE6EC" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#46C7D0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ===== name ===== -->
     <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FCEBBE"/>
-      <stop offset="0.5" stop-color="#F0C060"/>
-      <stop offset="1" stop-color="#D3922A"/>
-    </linearGradient>
-    <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D3922A" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#F0C060"/>
-      <stop offset="1" stop-color="#D3922A" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="gem" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#9BF0F2"/>
-      <stop offset="0.5" stop-color="#46C7D0"/>
-      <stop offset="1" stop-color="#1E7E8C"/>
+      <stop offset="0" stop-color="#FFF1CC"/>
+      <stop offset="0.45" stop-color="#F3C766"/>
+      <stop offset="1" stop-color="#C8892A"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFF8E6" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFF8E6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFF8E6" stop-opacity="0"/>
     </linearGradient>
-    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="nameGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
     </filter>
-    <filter id="gemglow" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- soft comet tails: one for curved ornaments, one (explicit region) for the flat divider -->
+    <filter id="sparkBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.2"/>
     </filter>
+    <filter id="sparkBlurH" filterUnits="userSpaceOnUse" x="-180" y="-16" width="360" height="32">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <clipPath id="nameClip">
+      <text x="500" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="56" font-weight="bold" letter-spacing="1.5">Ariqo Banyusila Abrar</text>
+    </clipPath>
 
-    <!-- Art Nouveau corner flourish (drawn for top-left, reused/mirrored) -->
-    <g id="flourish" fill="none" stroke="#F0C060" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.55">
-      <path d="M 4 118 C 4 52 46 10 132 16" stroke-dasharray="230" stroke-dashoffset="230">
-        <animate attributeName="stroke-dashoffset" values="230;0" dur="1.6s" begin="0.2s" fill="freeze"/>
-      </path>
-      <path d="M 10 116 C 34 92 52 74 48 44 C 45 24 27 20 21 33 C 16 44 30 50 37 40" stroke-dasharray="150" stroke-dashoffset="150">
-        <animate attributeName="stroke-dashoffset" values="150;0" dur="1.6s" begin="0.5s" fill="freeze"/>
-      </path>
-      <circle cx="132" cy="16" r="3.2" fill="#F0C060" stroke="none"><animate attributeName="fill-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
-      <circle cx="60" cy="24" r="2.2" fill="#F0C060" stroke="none" fill-opacity="0.8"/>
-      <circle cx="92" cy="17" r="1.6" fill="#F0C060" stroke="none" fill-opacity="0.7"/>
+    <!-- ===== subtitle: endless flowing shimmer ===== -->
+    <linearGradient id="subShine" x1="0" y1="0" x2="2" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#E8D6B0"/>
+      <stop offset="0.44" stop-color="#E8D6B0"/>
+      <stop offset="0.5" stop-color="#FFFFFF"/>
+      <stop offset="0.56" stop-color="#E8D6B0"/>
+      <stop offset="1" stop-color="#E8D6B0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-2 0" to="0 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- ===== emerald brooch ===== -->
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D2FCFF"/>
+      <stop offset="0.35" stop-color="#63D8E0"/>
+      <stop offset="0.7" stop-color="#1F8E9C"/>
+      <stop offset="1" stop-color="#0D4F5C"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#8BEAF0" stop-opacity="0.6"/>
+      <stop offset="0.5" stop-color="#F0C060" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#F0C060" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="divGrad" gradientUnits="userSpaceOnUse" x1="-168" y1="0" x2="168" y2="0">
+      <stop offset="0" stop-color="#D3922A" stop-opacity="0"/>
+      <stop offset="0.36" stop-color="#F0C060" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#F0C060"/>
+      <stop offset="0.64" stop-color="#F0C060" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#D3922A" stop-opacity="0"/>
+    </linearGradient>
+    <!-- spark strokes fade toward the divider ends (the dash travels through this) -->
+    <linearGradient id="sparkCore" gradientUnits="userSpaceOnUse" x1="-168" y1="0" x2="168" y2="0">
+      <stop offset="0" stop-color="#FFF8E4" stop-opacity="0"/>
+      <stop offset="0.24" stop-color="#FFF8E4"/>
+      <stop offset="0.76" stop-color="#FFF8E4"/>
+      <stop offset="1" stop-color="#FFF8E4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sparkHalo" gradientUnits="userSpaceOnUse" x1="-168" y1="0" x2="168" y2="0">
+      <stop offset="0" stop-color="#FFE3A0" stop-opacity="0"/>
+      <stop offset="0.24" stop-color="#FFE3A0" stop-opacity="0.65"/>
+      <stop offset="0.76" stop-color="#FFE3A0" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#FFE3A0" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="star" d="M 0 -7 L 1.2 -1.2 L 7 0 L 1.2 1.2 L 0 7 L -1.2 1.2 L -7 0 L -1.2 -1.2 Z"/>
+
+    <!-- ===== Art Nouveau corner, with light tracing the ink (9s master cycle) ===== -->
+    <g id="corner">
+      <g fill="none" stroke="#E6B458" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.5">
+        <path d="M 4 118 C 4 52 46 10 132 16"/>
+        <path d="M 10 116 C 34 92 52 74 48 44 C 44 24 27 20 21 33 C 16 44 30 50 37 40"/>
+      </g>
+      <!-- comet = blurred tail + bright head riding 18/14 units ahead of it -->
+      <g fill="none" stroke-linecap="round">
+        <path d="M 4 118 C 4 52 46 10 132 16" stroke="#FFE3A0" stroke-opacity="0.6" stroke-width="6" stroke-dasharray="30 420" stroke-dashoffset="32" filter="url(#sparkBlur)">
+          <animate attributeName="stroke-dashoffset" values="32;32;-260;-260" keyTimes="0;0.46;0.72;1" calcMode="spline" keySplines="0 0 1 1;0.5 0 0.3 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 4 118 C 4 52 46 10 132 16" stroke="#FFFBF0" stroke-width="2.2" stroke-dasharray="11 420" stroke-dashoffset="14">
+          <animate attributeName="stroke-dashoffset" values="14;14;-278;-278" keyTimes="0;0.46;0.72;1" calcMode="spline" keySplines="0 0 1 1;0.5 0 0.3 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 10 116 C 34 92 52 74 48 44 C 44 24 27 20 21 33 C 16 44 30 50 37 40" stroke="#FFE3A0" stroke-opacity="0.6" stroke-width="5" stroke-dasharray="24 380" stroke-dashoffset="28" filter="url(#sparkBlur)">
+          <animate attributeName="stroke-dashoffset" values="28;28;-230;-230" keyTimes="0;0.5;0.76;1" calcMode="spline" keySplines="0 0 1 1;0.5 0 0.3 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 10 116 C 34 92 52 74 48 44 C 44 24 27 20 21 33 C 16 44 30 50 37 40" stroke="#FFFBF0" stroke-width="2" stroke-dasharray="9 380" stroke-dashoffset="14">
+          <animate attributeName="stroke-dashoffset" values="14;14;-244;-244" keyTimes="0;0.5;0.76;1" calcMode="spline" keySplines="0 0 1 1;0.5 0 0.3 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <circle cx="132" cy="16" r="3" fill="#F3C766">
+        <animate attributeName="r" values="3;3;5;3;3" keyTimes="0;0.63;0.68;0.8;1" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.2 1;0.4 0 0.6 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="37" cy="40" r="2.2" fill="#F3C766">
+        <animate attributeName="r" values="2.2;2.2;3.8;2.2;2.2" keyTimes="0;0.67;0.72;0.84;1" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.2 1;0.4 0 0.6 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="24" r="1.8" fill="#F3C766" fill-opacity="0.75"/>
+      <circle cx="92" cy="17" r="1.4" fill="#F3C766" fill-opacity="0.6"/>
     </g>
   </defs>
 
-  <!-- background + glow -->
+  <!-- ===== background ===== -->
   <rect width="1000" height="300" fill="url(#bg)"/>
-  <rect width="1000" height="300" fill="url(#glow)">
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+  <rect width="1000" height="300" fill="url(#aura)">
+    <animate attributeName="opacity" values="0.7;1;0.7" keyTimes="0;0.32;1" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" dur="9s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- faint letter/paper panel behind name (the 'surat' motif) -->
-  <rect x="250" y="70" width="500" height="120" rx="4" fill="#F5E6C8" fill-opacity="0.03" stroke="#F0C060" stroke-opacity="0.10"/>
-
-  <!-- four corner flourishes -->
-  <use href="#flourish" transform="translate(26,22)"/>
-  <use href="#flourish" transform="translate(974,22) scale(-1,1)"/>
-  <use href="#flourish" transform="translate(26,278) scale(1,-1)"/>
-  <use href="#flourish" transform="translate(974,278) scale(-1,-1)"/>
-
-  <!-- floating golden light motes -->
-  <g fill="#F0C060">
-    <circle cx="150" cy="240" r="2.4"><animate attributeName="cy" values="270;40" dur="7.5s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="7.5s" begin="0s" repeatCount="indefinite"/></circle>
-    <circle cx="250" cy="240" r="1.6"><animate attributeName="cy" values="270;55" dur="9.5s" begin="1.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="9.5s" begin="1.3s" repeatCount="indefinite"/></circle>
-    <circle cx="720" cy="240" r="2.2"><animate attributeName="cy" values="270;45" dur="8s" begin="0.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" dur="8s" begin="0.7s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="240" r="1.5"><animate attributeName="cy" values="270;60" dur="10.5s" begin="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="10.5s" begin="3.2s" repeatCount="indefinite"/></circle>
-    <circle cx="880" cy="240" r="2.6"><animate attributeName="cy" values="270;35" dur="8.8s" begin="1.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="8.8s" begin="1.9s" repeatCount="indefinite"/></circle>
+  <!-- swaying golden sunbeams -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-2.5 120 -80;2.5 120 -80;-2.5 120 -80" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="16s" repeatCount="indefinite"/>
+    <path d="M 95 -80 L 150 -80 L 560 340 L 410 340 Z" fill="url(#beam)">
+      <animate attributeName="opacity" values="0.55;1;0.55" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="2 120 -80;-2 120 -80;2 120 -80" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="21s" repeatCount="indefinite"/>
+    <path d="M 150 -80 L 180 -80 L 780 340 L 690 340 Z" fill="url(#beam)">
+      <animate attributeName="opacity" values="0.35;0.8;0.35" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="12s" begin="-4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-1.5 120 -80;1.5 120 -80;-1.5 120 -80" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="18s" begin="-6s" repeatCount="indefinite"/>
+    <path d="M 45 -80 L 72 -80 L 330 340 L 250 340 Z" fill="url(#beam)">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="14s" begin="-9s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- name -->
-  <g filter="url(#soft)">
-    <text x="500" y="140" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="54" font-weight="bold" letter-spacing="1.5" fill="url(#gold)">Ariqo Banyusila Abrar</text>
+  <!-- drifting bokeh -->
+  <circle cx="170" cy="225" r="60" fill="url(#bokehGold)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;28 -14;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="17s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="835" cy="85" r="75" fill="url(#bokehGold)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;-32 16;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="21s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="690" cy="245" r="48" fill="url(#bokehTeal)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;-20 -12;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="19s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="60" r="52" fill="url(#bokehGold)" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0 0;24 10;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="23s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect width="1000" height="300" fill="url(#vignette)"/>
+
+  <!-- rising, swaying light motes -->
+  <g>
+    <g transform="translate(70,305)"><circle r="4" fill="url(#mote)" opacity="0"><animateMotion dur="13s" begin="-1s" repeatCount="indefinite" path="M0,0 C 16,-60 -14,-130 8,-220"/><animate attributeName="opacity" values="0;0.9;0.8;0" keyTimes="0;0.18;0.75;1" dur="13s" begin="-1s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(140,305)"><circle r="3" fill="url(#mote)" opacity="0"><animateMotion dur="11s" begin="-6s" repeatCount="indefinite" path="M0,0 C -14,-50 16,-120 -6,-205"/><animate attributeName="opacity" values="0;0.8;0.7;0" keyTimes="0;0.18;0.75;1" dur="11s" begin="-6s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(215,305)"><circle r="5" fill="url(#mote)" opacity="0"><animateMotion dur="15s" begin="-9s" repeatCount="indefinite" path="M0,0 C 12,-70 -18,-140 6,-230"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="15s" begin="-9s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(290,305)"><circle r="3.2" fill="url(#mote)" opacity="0"><animateMotion dur="12s" begin="-3s" repeatCount="indefinite" path="M0,0 C -18,-60 12,-130 -8,-210"/><animate attributeName="opacity" values="0;0.8;0.7;0" keyTimes="0;0.18;0.75;1" dur="12s" begin="-3s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(320,305)"><circle r="3.4" fill="url(#moteTeal)" opacity="0"><animateMotion dur="17s" begin="-6s" repeatCount="indefinite" path="M0,0 C 20,-60 -16,-140 10,-225"/><animate attributeName="opacity" values="0;0.75;0.65;0" keyTimes="0;0.2;0.75;1" dur="17s" begin="-6s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(360,305)"><circle r="4" fill="url(#mote)" opacity="0"><animateMotion dur="14s" begin="-11s" repeatCount="indefinite" path="M0,0 C 14,-55 -12,-125 4,-215"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="14s" begin="-11s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(430,305)"><circle r="2.6" fill="url(#mote)" opacity="0"><animateMotion dur="10s" begin="-4s" repeatCount="indefinite" path="M0,0 C -10,-50 14,-110 -4,-195"/><animate attributeName="opacity" values="0;0.75;0.65;0" keyTimes="0;0.18;0.75;1" dur="10s" begin="-4s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(560,305)"><circle r="3.6" fill="url(#mote)" opacity="0"><animateMotion dur="13s" begin="-7s" repeatCount="indefinite" path="M0,0 C 16,-65 -10,-130 8,-220"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="13s" begin="-7s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(630,305)"><circle r="4.4" fill="url(#mote)" opacity="0"><animateMotion dur="16s" begin="-2s" repeatCount="indefinite" path="M0,0 C -16,-60 18,-135 -6,-225"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="16s" begin="-2s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(690,305)"><circle r="3" fill="url(#moteTeal)" opacity="0"><animateMotion dur="16s" begin="-13s" repeatCount="indefinite" path="M0,0 C -14,-55 16,-130 -8,-215"/><animate attributeName="opacity" values="0;0.7;0.6;0" keyTimes="0;0.2;0.75;1" dur="16s" begin="-13s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(700,305)"><circle r="3" fill="url(#mote)" opacity="0"><animateMotion dur="11s" begin="-8s" repeatCount="indefinite" path="M0,0 C 12,-50 -14,-120 6,-205"/><animate attributeName="opacity" values="0;0.8;0.7;0" keyTimes="0;0.18;0.75;1" dur="11s" begin="-8s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(775,305)"><circle r="4.8" fill="url(#mote)" opacity="0"><animateMotion dur="14s" begin="-5s" repeatCount="indefinite" path="M0,0 C -12,-70 16,-140 -4,-230"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="14s" begin="-5s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(850,305)"><circle r="3.2" fill="url(#mote)" opacity="0"><animateMotion dur="12s" begin="-10s" repeatCount="indefinite" path="M0,0 C 18,-60 -10,-125 8,-210"/><animate attributeName="opacity" values="0;0.8;0.7;0" keyTimes="0;0.18;0.75;1" dur="12s" begin="-10s" repeatCount="indefinite"/></circle></g>
+    <g transform="translate(925,305)"><circle r="4" fill="url(#mote)" opacity="0"><animateMotion dur="15s" begin="-12s" repeatCount="indefinite" path="M0,0 C -16,-65 12,-135 -6,-220"/><animate attributeName="opacity" values="0;0.85;0.75;0" keyTimes="0;0.18;0.75;1" dur="15s" begin="-12s" repeatCount="indefinite"/></circle></g>
   </g>
-  <!-- sheen sweep over the name -->
-  <clipPath id="nameClip"><text x="500" y="140" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="54" font-weight="bold" letter-spacing="1.5">Ariqo Banyusila Abrar</text></clipPath>
+
+  <!-- Art Nouveau corners -->
+  <use href="#corner" xlink:href="#corner" transform="translate(26,22)"/>
+  <use href="#corner" xlink:href="#corner" transform="translate(974,22) scale(-1,1)"/>
+  <use href="#corner" xlink:href="#corner" transform="translate(26,278) scale(1,-1)"/>
+  <use href="#corner" xlink:href="#corner" transform="translate(974,278) scale(-1,-1)"/>
+
+  <!-- ===== name: breathing glow + gold + light sweep ===== -->
+  <text x="500" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="56" font-weight="bold" letter-spacing="1.5" fill="#F0B24A" filter="url(#nameGlow)" opacity="0.4">Ariqo Banyusila Abrar<animate attributeName="opacity" values="0.28;0.6;0.28" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.5s" repeatCount="indefinite"/></text>
+  <text x="500" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="56" font-weight="bold" letter-spacing="1.5" fill="url(#gold)">Ariqo Banyusila Abrar</text>
   <g clip-path="url(#nameClip)">
-    <rect x="-260" y="80" width="170" height="90" transform="skewX(-18)" fill="url(#sheen)">
-      <animate attributeName="x" values="-260;1080" dur="5s" begin="1.2s" repeatCount="indefinite"/>
+    <rect x="-340" y="60" width="160" height="90" transform="skewX(-18)" fill="url(#sheen)">
+      <animate attributeName="x" values="-340;1080;1080" keyTimes="0;0.28;1" calcMode="spline" keySplines="0.45 0 0.3 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- subtitle with typing reveal -->
-  <clipPath id="subReveal"><rect x="250" y="158" width="0" height="34"><animate attributeName="width" values="0;500" dur="1.7s" begin="0.7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.3 1"/></rect></clipPath>
-  <g clip-path="url(#subReveal)">
-    <text x="500" y="182" text-anchor="middle" font-family="'Trebuchet MS',Verdana,sans-serif" font-size="20" letter-spacing="4" fill="#F5E6C8">AI Engineer&#160;&#160;&#183;&#160;&#160;App Builder</text>
+  <!-- ===== subtitle ===== -->
+  <text x="500" y="158" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Verdana,sans-serif" font-size="20" letter-spacing="5" fill="url(#subShine)">AI Engineer<tspan fill="#6ADBE2">&#160;&#160;&#183;&#160;&#160;</tspan>App Builder</text>
+
+  <!-- ===== divider + emerald brooch ===== -->
+  <g transform="translate(500,202)">
+    <path d="M -36 0 L -168 0 M 36 0 L 168 0" stroke="url(#divGrad)" stroke-width="1.4" fill="none"/>
+    <path d="M -40 -2.6 L -37.4 0 L -40 2.6 L -42.6 0 Z M 40 -2.6 L 42.6 0 L 40 2.6 L 37.4 0 Z" fill="#F3C766"/>
+
+    <!-- light flowing outward from the gem -->
+    <g fill="none" stroke-linecap="round">
+      <g filter="url(#sparkBlurH)">
+        <path d="M -36 0 L -168 0" stroke="url(#sparkHalo)" stroke-width="6" stroke-dasharray="32 320" stroke-dashoffset="38">
+          <animate attributeName="stroke-dashoffset" values="38;38;-170;-170" keyTimes="0;0.3;0.54;1" calcMode="spline" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 36 0 L 168 0" stroke="url(#sparkHalo)" stroke-width="6" stroke-dasharray="32 320" stroke-dashoffset="38">
+          <animate attributeName="stroke-dashoffset" values="38;38;-170;-170" keyTimes="0;0.3;0.54;1" calcMode="spline" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <path d="M -36 0 L -168 0" stroke="url(#sparkCore)" stroke-width="2.2" stroke-dasharray="12 320" stroke-dashoffset="18">
+        <animate attributeName="stroke-dashoffset" values="18;18;-190;-190" keyTimes="0;0.3;0.54;1" calcMode="spline" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 36 0 L 168 0" stroke="url(#sparkCore)" stroke-width="2.2" stroke-dasharray="12 320" stroke-dashoffset="18">
+        <animate attributeName="stroke-dashoffset" values="18;18;-190;-190" keyTimes="0;0.3;0.54;1" calcMode="spline" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- halo pulse -->
+    <circle r="26" fill="url(#halo)" opacity="0.55">
+      <animate attributeName="r" values="26;26;38;26;26" keyTimes="0;0.24;0.3;0.46;1" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.3 1;0.4 0 0.6 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;0.55;1;0.55;0.55" keyTimes="0;0.24;0.3;0.46;1" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.3 1;0.4 0 0.6 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- slowly turning rays -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+      <g stroke="#F0C060" stroke-width="1" stroke-linecap="round" fill="none">
+        <path d="M 0 -22 L 0 -31 M 0 22 L 0 31 M -22 0 L -31 0 M 22 0 L 31 0" stroke-opacity="0.6"/>
+        <path d="M 15.5 -15.5 L 20 -20 M -15.5 15.5 L -20 20 M 15.5 15.5 L 20 20 M -15.5 -15.5 L -20 -20" stroke-opacity="0.4"/>
+      </g>
+    </g>
+
+    <!-- the gem, breathing -->
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1;1.1;1;1" keyTimes="0;0.24;0.3;0.44;1" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.3 1;0.4 0 0.6 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+      <path d="M 0 -19 L 14 0 L 0 19 L -14 0 Z" fill="#2a1807" stroke="#E2AE4E" stroke-width="1.6"/>
+      <path d="M 0 -15 L 11 0 L 0 15 L -11 0 Z" fill="url(#gem)"/>
+      <path d="M -11 0 L 11 0 M 0 -15 L -4 0 L 0 15 M 0 -15 L 4 0 L 0 15" fill="none" stroke="#0a4450" stroke-width="0.6" stroke-opacity="0.5"/>
+      <path d="M -1.5 -11.5 L -7 -2 L -3.2 -2 Z" fill="#FFFFFF" fill-opacity="0.8">
+        <animate attributeName="fill-opacity" values="0.55;0.95;0.55" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- two sparks orbiting the gem -->
+    <g transform="rotate(-14)">
+      <circle r="1.7" fill="#FFF3CF">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M 27 0 A 27 9 0 1 1 -27 0 A 27 9 0 1 1 27 0"/>
+        <animate attributeName="opacity" values="0.55;1;0.55;0.1;0.55" keyTimes="0;0.25;0.5;0.75;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="1.4" fill="#A6F1F5">
+        <animateMotion dur="6s" begin="-3s" repeatCount="indefinite" path="M 27 0 A 27 9 0 1 1 -27 0 A 27 9 0 1 1 27 0"/>
+        <animate attributeName="opacity" values="0.55;1;0.55;0.1;0.55" keyTimes="0;0.25;0.5;0.75;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" dur="6s" begin="-3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- glint -->
+    <g transform="translate(-6,-10)">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.001;0.001;1.7;0.001;0.001" keyTimes="0;0.25;0.3;0.37;1" calcMode="spline" keySplines="0 0 1 1;0.2 0 0.2 1;0.5 0 0.7 1;0 0 1 1" dur="9s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="0;0;45;45" keyTimes="0;0.25;0.37;1" dur="9s" repeatCount="indefinite"/>
+          <use href="#star" xlink:href="#star" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </g>
   </g>
 
-  <!-- ornamental divider with emerald brooch centerpiece -->
-  <g transform="translate(500,222)">
-    <path d="M -170 0 L -34 0" stroke="url(#goldline)" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="140"><animate attributeName="stroke-dashoffset" values="140;0" dur="1.3s" begin="1.5s" fill="freeze"/></path>
-    <path d="M 170 0 L 34 0" stroke="url(#goldline)" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="140"><animate attributeName="stroke-dashoffset" values="140;0" dur="1.3s" begin="1.5s" fill="freeze"/></path>
-    <circle cx="-34" cy="0" r="2.4" fill="#F0C060"/>
-    <circle cx="34" cy="0" r="2.4" fill="#F0C060"/>
-    <!-- radiating gold rays -->
-    <g stroke="#F0C060" stroke-width="1" stroke-opacity="0.5">
-      <line x1="0" y1="-20" x2="0" y2="-27"/><line x1="0" y1="20" x2="0" y2="27"/>
-      <line x1="-20" y1="0" x2="-27" y2="0"/><line x1="20" y1="0" x2="27" y2="0"/>
-      <line x1="-14" y1="-14" x2="-19" y2="-19"/><line x1="14" y1="14" x2="19" y2="19"/>
-      <line x1="14" y1="-14" x2="19" y2="-19"/><line x1="-14" y1="14" x2="-19" y2="19"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-    </g>
-    <!-- emerald gem (brooch) -->
-    <g filter="url(#gemglow)">
-      <path d="M 0 -15 L 11 0 L 0 15 L -11 0 Z" fill="url(#gem)" stroke="#CFF6F7" stroke-width="0.8" stroke-opacity="0.7"/>
-      <path d="M 0 -15 L 0 15 M -11 0 L 11 0" stroke="#0d5560" stroke-width="0.6" stroke-opacity="0.5"/>
-      <circle cx="-3.5" cy="-4.5" r="1.8" fill="#ffffff" fill-opacity="0.9"/>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.6s" repeatCount="indefinite"/>
-    </g>
+  <!-- ===== twinkling stars ===== -->
+  <g fill="#FFF3CF">
+    <g transform="translate(262,58)"><g><animateTransform attributeName="transform" type="scale" values="0.25;0.9;0.25" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.4s" begin="-0.6s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.15;0.95;0.15" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.4s" begin="-0.6s" repeatCount="indefinite"/></use></g></g>
+    <g transform="translate(742,48)"><g><animateTransform attributeName="transform" type="scale" values="0.25;0.8;0.25" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.1s" begin="-2.2s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.15;0.9;0.15" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.1s" begin="-2.2s" repeatCount="indefinite"/></use></g></g>
+    <g transform="translate(905,150)"><g><animateTransform attributeName="transform" type="scale" values="0.2;0.7;0.2" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.8s" begin="-1.4s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.1;0.85;0.1" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.8s" begin="-1.4s" repeatCount="indefinite"/></use></g></g>
+    <g transform="translate(95,150)"><g><animateTransform attributeName="transform" type="scale" values="0.2;0.7;0.2" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.4s" begin="-3s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.1;0.85;0.1" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.4s" begin="-3s" repeatCount="indefinite"/></use></g></g>
+    <g transform="translate(402,262)"><g><animateTransform attributeName="transform" type="scale" values="0.2;0.65;0.2" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.6s" begin="-2.6s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.1;0.8;0.1" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="3.6s" begin="-2.6s" repeatCount="indefinite"/></use></g></g>
+    <g transform="translate(612,258)"><g><animateTransform attributeName="transform" type="scale" values="0.2;0.75;0.2" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.8s" begin="-0.9s" repeatCount="indefinite"/><use href="#star" xlink:href="#star"><animate attributeName="opacity" values="0.1;0.85;0.1" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1" dur="4.8s" begin="-0.9s" repeatCount="indefinite"/></use></g></g>
   </g>
-
-  <!-- letter-writing tagline (Violet Evergarden nod) -->
-  <text x="500" y="272" text-anchor="middle" font-family="Georgia,serif" font-size="12.5" font-style="italic" letter-spacing="2.5" fill="#a07d4c">&#8220; menulis kode, seperti menulis surat &#8221;</text>
 </svg>
